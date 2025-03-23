@@ -1,6 +1,5 @@
-import "./register.scss";
+import "./Register.scss";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios"
 import { useContext, useState } from "react";
 import apiRequest from "../../lib/apiRequest";
 import { AuthContext } from "../../context/AuthContext";
