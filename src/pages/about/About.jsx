@@ -12,7 +12,7 @@ const About = () => {
       <div className="about-content">
         <h2>Who We Are</h2>
         <p>
-          At <strong>Prime Asset</strong>, we are committed to helping you find your dream home, 
+          At <strong>your real estate</strong>, we are committed to helping you find your dream home, 
           sell your property at the best value, and make informed real estate decisions. With years 
           of experience in the industry, we offer top-tier services tailored to your needs.
         </p>

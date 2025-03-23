@@ -69,7 +69,7 @@ const Navbar = () => {
       <div className='left'>
         <a href='/' className='logo'>
           <img src='/logo.png' alt='logo'/>
-          <span>PrimeAsset</span>
+          <span>Your Real Esate</span>
         </a>
         <Link to='/'>Home</Link>
         <Link to='/abouts'>About</Link>
