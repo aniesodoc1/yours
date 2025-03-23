@@ -1,7 +1,6 @@
 import React from 'react'
 import HomePage from './pages/homePage/HomePage'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import ListPage from './pages/listPage/listPage'
 import {Layout, RequireAuth} from './pages/layout/Layout'
 import SinglePage from './pages/singlePage.jsx/SinglePage'
 import ProfilePage from './pages/profilePage/ProfilePage'
@@ -13,6 +12,7 @@ import About from './pages/about/About'
 import Contact from './pages/contact/Contact'
 import Agents from './pages/agent/Agents'
 import NewPostPage from './pages/newPostPage/NewPostPage'
+import ListPage from "./pages/listPage/ListPage"
 
 
 const App = () => {
@@ -26,7 +26,7 @@ const App = () => {
       },
       {
         path: "/list",
-        element: <ListPage/>,
+        element: <ListPage/>
       },
       {
         path: "/:id",
