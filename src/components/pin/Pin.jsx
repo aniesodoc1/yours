@@ -12,7 +12,7 @@ const Pin = ({ item }) => {
 
   return (
     <Marker position={[item.latitude, item.longitude]}>
-      <Popup>
+      <Popup  minWidth={250} maxWidth={300} autoPan={true}>
         <div className='popupContainer'>
           {isVideo ? (
             <video src={firstMedia} autoPlay loop controls width="100%" />

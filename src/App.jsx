@@ -13,6 +13,8 @@ import Contact from './pages/contact/Contact'
 import Agents from './pages/agent/Agents'
 import NewPostPage from './pages/newPostPage/NewPostPage'
 import ListPage from "./pages/listPage/ListPage"
+import "leaflet/dist/leaflet.css";
+
 
 
 const App = () => {
