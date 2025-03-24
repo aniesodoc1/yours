@@ -11,7 +11,7 @@ export const SocketContextProvider = ({ children }) => {
   useEffect(() => {
     const newSocket = io("https://yours-socket.vercel.app", {
       withCredentials: true,
-      transports: ["websocket", "polling"], // Ensure fallback options
+      transports: ["websocket"], // Ensure fallback options
     });
     setSocket(newSocket);
   
