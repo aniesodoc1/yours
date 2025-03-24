@@ -9,13 +9,22 @@ export const SocketContextProvider = ({ children }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    setSocket(io("yours-socket.vercel.app"));
+    const newSocket = io("https://yours-socket.vercel.app", {
+      withCredentials: true,
+      transports: ["websocket", "polling"], // Ensure fallback options
+    });
+    setSocket(newSocket);
+  
+    // Clean up on component unmount
+    return () => newSocket.disconnect();
   }, []);
-
+  
   useEffect(() => {
-  currentUser && socket?.emit("newUser", currentUser.id);
+    if (currentUser && socket) {
+      socket.emit("newUser", currentUser.id);
+    }
   }, [currentUser, socket]);
-
+  
   return (
     <SocketContext.Provider value={{ socket }}>
       {children}
