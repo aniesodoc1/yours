@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const Card = ({ item, refreshPosts }) => {
   const handleDelete = async () => {
     try {
-      const response = await fetch(`http://localhost:8800/api/posts/${item.id}`, {
+      const response = await fetch(`yours-server.vercel.app/api/posts/${item.id}`, {
         method: "DELETE",
         credentials: "include",
       });
