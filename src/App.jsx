@@ -16,7 +16,6 @@ import ListPage from "./pages/listPage/ListPage"
 import "leaflet/dist/leaflet.css";
 
 
-
 const App = () => {
   const router = createBrowserRouter([
     {
