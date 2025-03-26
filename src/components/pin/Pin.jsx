@@ -2,6 +2,10 @@ import React from "react";
 import "./Pin.scss";
 import { Link } from "react-router-dom";
 import { Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
 
 
 
